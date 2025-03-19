@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c28237d9-87e4-4e3b-bbc5-9c82e9dd4ce8}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="pm_teamname" select="1" icon="1" preview="1">
+        <row name="result" id="pm_teamid">
+          <cell name="pm_teamname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="pm_team">
+          <attribute name="pm_teamid" />
+          <attribute name="pm_teamname" />
+          <attribute name="createdon" />
+          <order attribute="pm_teamname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="pm_teamname" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Teams" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
