@@ -28,6 +28,22 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{81009b69-8ac8-4727-9f7a-04f9523ff977}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Age" languagecode="1033" />
+                        </labels>
+                        <control id="pm_age" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="pm_age" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0cddaddc-b4d6-4bac-a8dc-2afdf096e3a1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Jersey Number" languagecode="1033" />
+                        </labels>
+                        <control id="pm_jerseynumber" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="pm_jerseynumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{85598b99-5590-4805-aa57-c97a9b3a7816}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
                           <label description="Team" languagecode="1033" />
